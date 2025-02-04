@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_24"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/nav_calendario"
+        android:icon="@drawable/ic_calendario_24"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/nav_pilots"
+        android:icon="@drawable/ic_piloto_24"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/nav_teams"
+        android:icon="@drawable/ic_teams_24"
+        tools:ignore="MenuTitle"/>
+    <item
+        android:id="@+id/nav_championship"
+        android:icon="@drawable/ic_trofeu_60"
+        tools:ignore="MenuTitle"/>
+</menu>
