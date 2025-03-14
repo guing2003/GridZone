@@ -3,6 +3,10 @@
     <color name="yellow">#FFEA66</color>
     <color name="black">#000000</color>
     <color name="white">#F5F5F5</color>
-    <color name="red">#C50036</color>
     <color name="blue">#155EE4</color>
+
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryVariant">#FF6347</color>
+    <color name="colorOnPrimary">#ffffff</color>
+
 </resources>
