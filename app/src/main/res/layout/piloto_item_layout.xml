@@ -20,7 +20,7 @@
             android:layout_marginEnd="16dp"
             android:contentDescription="@string/content_description_media"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/media" />
+            app:srcCompat="@drawable/imagem_padrao" />
 
         <!-- Textos - Lado direito -->
         <LinearLayout
