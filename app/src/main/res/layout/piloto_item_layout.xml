@@ -13,72 +13,69 @@
         android:orientation="horizontal"
         android:padding="16dp">
 
-        <!-- Image - Lado esquerdo -->
+
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginEnd="16dp"
-            android:contentDescription="@string/content_description_media"
+
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/imagem_padrao" />
 
-        <!-- Textos - Lado direito -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_marginEnd="16dp">
+            android:orientation="vertical">
 
-            <!-- Piloto - No topo -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="28sp"
                 android:text="Piloto"
-                android:textAppearance="?attr/textAppearanceHeadline6" />
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textSize="28sp" />
 
-            <!-- Equipe - Abaixo do Piloto -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:textSize="20sp"
                 android:text="Equipe"
                 android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="?android:attr/textColorSecondary" />
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="20sp" />
 
 
         </LinearLayout>
 
-        <!-- Parte para colocar Sigla e Número à direita -->
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="end"
             android:layout_alignParentRight="true"
-            >
+            android:gravity="end"
+            android:orientation="vertical">
 
-            <!-- Sigla do nome alinhado com o Piloto -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="20dp"
                 android:text="Sigla do nome"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="?android:attr/textColorSecondary"
-                android:paddingTop="8dp"
-                android:paddingBottom="20dp"/>
+                android:textSize="18sp" />
 
-            <!-- Numero do Piloto alinhado com a Equipe -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
                 android:text="Numero do Piloto"
                 android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="?android:attr/textColorSecondary" />
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="18sp" />
         </LinearLayout>
 
     </LinearLayout>
