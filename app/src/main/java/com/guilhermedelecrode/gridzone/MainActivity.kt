@@ -8,7 +8,7 @@ import com.guilhermedelecrode.gridzone.ui.CalendarioFragment
 import com.guilhermedelecrode.gridzone.ui.CampeonatoFragment
 import com.guilhermedelecrode.gridzone.ui.HomeFragment
 import com.guilhermedelecrode.gridzone.ui.PilotosFragment
-import com.guilhermedelecrode.gridzone.ui.TeamsFragment
+import com.guilhermedelecrode.gridzone.ui.EquipeFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home -> HomeFragment()
                 R.id.nav_calendario -> CalendarioFragment()
                 R.id.nav_pilots -> PilotosFragment()
-                R.id.nav_teams -> TeamsFragment()
+                R.id.nav_teams -> EquipeFragment()
                 R.id.nav_championship -> CampeonatoFragment()
                 else -> HomeFragment()
             }

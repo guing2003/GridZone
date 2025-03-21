@@ -19,7 +19,6 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginEnd="16dp"
-
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/imagem_padrao" />
 
@@ -58,8 +57,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
 
             android:orientation="vertical">
 
