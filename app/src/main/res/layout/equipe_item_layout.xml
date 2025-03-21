@@ -2,6 +2,7 @@
 
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -29,7 +30,7 @@
                     android:id="@+id/nome_equipe_fragment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Equipe"
+                    tools:text="Equipe"
                     android:textAppearance="?attr/textAppearanceHeadline6"
                     android:textSize="24sp"
                     android:layout_weight="1"/>
@@ -49,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Motor"
+                tools:text="Motor"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="?android:attr/textColorSecondary"
                 android:textSize="20sp" />
