@@ -7,3 +7,9 @@ data class Piloto(
     val equipe: String,
     //val imagem: String
 )
+
+class PilotoCampeonato(
+    val nome: String,
+    val equipe: String,
+    val pontuacao: Double?
+)

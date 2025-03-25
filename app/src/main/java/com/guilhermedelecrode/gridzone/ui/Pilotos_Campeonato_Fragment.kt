@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
 import com.guilhermedelecrode.gridzone.model.Piloto
+import com.guilhermedelecrode.gridzone.model.PilotoCampeonato
 
 class Pilotos_Campeonato_Fragment : Fragment() {
     override fun onCreateView(
@@ -25,8 +26,8 @@ class Pilotos_Campeonato_Fragment : Fragment() {
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView_campeonato_piloto_fragment)
 
         val listaPilotos = listOf(
-            Piloto("Lewis Hamilton", "HAM", "44","Ferrari"),
-            Piloto("Charles Leclerc", "LEC", "16","Ferrari")
+            PilotoCampeonato("Lewis Hamilton", "HAM",9.0),
+            PilotoCampeonato("Charles Leclerc", "LEC",8.0)
         )
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())

@@ -4,9 +4,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
-import com.guilhermedelecrode.gridzone.model.Piloto
+import com.guilhermedelecrode.gridzone.model.PilotoCampeonato
 
-class PilotoCampeonatoFragmentAdapter(private val listaPilotos: List<Piloto>) :
+class PilotoCampeonatoFragmentAdapter(private val listaPilotos: List<PilotoCampeonato>) :
     RecyclerView.Adapter<PilotoCampeonatoFragmentAdapter.PilotoCampeonatoViewHolder>() {
 
 
@@ -31,7 +31,7 @@ class PilotoCampeonatoFragmentAdapter(private val listaPilotos: List<Piloto>) :
         val piloto = listaPilotos[position]
         //holder.imgPiloto.text =  // Define a imagem
         holder.nomePiloto.text = piloto.nome
-        //holder.pontuacaoPiloto.text = piloto.pontuacao.toString()
+        holder.pontuacaoPiloto.text = piloto.pontuacao.toString()
         holder.equipePiloto.text = piloto.equipe
     }
 
