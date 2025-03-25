@@ -5,3 +5,9 @@ data class Equipe(
     val motor: String,
     //val imagem: String
 )
+
+data class EquipeCampeonato(
+    val nome: String,
+    val pontuacao: Double?
+)
+

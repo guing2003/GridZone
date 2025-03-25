@@ -14,7 +14,7 @@
             android:id="@+id/recyclerView_campeonato_piloto_fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/piloto_campeonato_layout" />
+            tools:listitem="@layout/piloto_campeonato_item_layout" />
 
     </LinearLayout>
 </ScrollView>

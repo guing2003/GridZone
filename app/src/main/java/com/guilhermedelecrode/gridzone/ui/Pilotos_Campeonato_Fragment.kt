@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
-import com.guilhermedelecrode.gridzone.model.Piloto
 import com.guilhermedelecrode.gridzone.model.PilotoCampeonato
 
 class Pilotos_Campeonato_Fragment : Fragment() {

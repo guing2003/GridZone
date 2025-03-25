@@ -8,7 +8,7 @@ data class Piloto(
     //val imagem: String
 )
 
-class PilotoCampeonato(
+data class PilotoCampeonato(
     val nome: String,
     val equipe: String,
     val pontuacao: Double?

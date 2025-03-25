@@ -22,7 +22,7 @@ class PilotoCampeonatoFragmentAdapter(private val listaPilotos: List<PilotoCampe
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PilotoCampeonatoViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.piloto_campeonato_layout, parent, false)
+            .inflate(R.layout.piloto_campeonato_item_layout, parent, false)
         return PilotoCampeonatoViewHolder(view)
     }
 

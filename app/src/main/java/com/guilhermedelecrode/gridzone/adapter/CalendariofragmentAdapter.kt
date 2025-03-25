@@ -14,9 +14,6 @@ class CalendarioFragmentAdapter(private val listaCalendario: List<Calendario>) :
         //val imgPiloto: ImageView = itemView.findViewById(R.id.imagem_piloto_fragment)
         val nomeEquipe: TextView = itemView.findViewById(R.id.nome_calendario_fragment)
         val data: TextView = itemView.findViewById(R.id.data_calendario_fragment)
-
-
-
     }
 
 
@@ -32,8 +29,6 @@ class CalendarioFragmentAdapter(private val listaCalendario: List<Calendario>) :
         //holder.imgCalendario.text =
         holder.nomeEquipe.text = calendario.nome
         holder.data.text = calendario.data
-
-
     }
 
 
