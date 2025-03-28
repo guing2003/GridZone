@@ -19,5 +19,10 @@ class DetalhesPilotoActivity : AppCompatActivity() {
         val numero = intent.getIntExtra("NUMERO", -1)
 
         Log.i("DetalhesPilotoActivity", "Dados do Piloto: $nome, $sigla, $equipe, $numero")
+
+        findViewById<TextView>(R.id.nome_piloto_detalhes_piloto_activity).text = nome
+        //findViewById<TextView>(R.id.textViewSigla).text = sigla
+        //findViewById<TextView>(R.id.textViewEquipe).text = equipe
+        //findViewById<TextView>(R.id.textViewNumero).text = numero.toString()
     }
 }
