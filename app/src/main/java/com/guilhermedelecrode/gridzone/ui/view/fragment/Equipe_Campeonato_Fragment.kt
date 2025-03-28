@@ -1,6 +1,6 @@
-package com.guilhermedelecrode.gridzone.ui
+package com.guilhermedelecrode.gridzone.ui.view.fragment
 
-import PilotoCampeonatoFragmentAdapter
+import EquipeCampeonatoFragmentAdapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,28 +9,28 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
-import com.guilhermedelecrode.gridzone.model.PilotoCampeonato
+import com.guilhermedelecrode.gridzone.data.model.EquipeCampeonato
 
-class Pilotos_Campeonato_Fragment : Fragment() {
+class Equipe_Campeonato_Fragment : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_pilotos_campeonato, container, false)
+        return inflater.inflate(R.layout.fragment_equipe_campeonato, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView_campeonato_piloto_fragment)
+        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView_campeonato_equipe_fragment)
 
-        val listaPilotos = listOf(
-            PilotoCampeonato("Lewis Hamilton", "HAM",9.0),
-            PilotoCampeonato("Charles Leclerc", "LEC",8.0)
+        val listaEquipe = listOf(
+            EquipeCampeonato("McLaren", 78.0),
+            EquipeCampeonato("Mercedes", 57.0)
         )
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = PilotoCampeonatoFragmentAdapter(listaPilotos)
+        recyclerView.adapter = EquipeCampeonatoFragmentAdapter(listaEquipe)
     }
-
 }

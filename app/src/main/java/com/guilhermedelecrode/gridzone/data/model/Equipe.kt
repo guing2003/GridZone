@@ -1,4 +1,4 @@
-package com.guilhermedelecrode.gridzone.model
+package com.guilhermedelecrode.gridzone.data.model
 
 data class Equipe(
     val nome: String,

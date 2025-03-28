@@ -1,6 +1,6 @@
-package com.guilhermedelecrode.gridzone.ui
+package com.guilhermedelecrode.gridzone.ui.view.fragment
 
-import CalendarioFragmentAdapter
+import EquipeFragmentAdapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,28 +9,27 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
-import com.guilhermedelecrode.gridzone.model.Calendario
-import com.guilhermedelecrode.gridzone.model.Piloto
+import com.guilhermedelecrode.gridzone.data.model.Equipe
 
-class CalendarioFragment : Fragment() {
+class EquipeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_calendario, container, false)
+        return inflater.inflate(R.layout.fragment_equipe, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView_calendario_fragment)
+        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView_equipe_fragment)
 
-        val listaCalendario = listOf(
-            Calendario("GP Da Australia","Domingo, 16 de Março - 1:00h"),
-            Calendario("GP da China", "Domingo, 22 de Março - 4:00h"),
+        val listaEquipes = listOf(
+            Equipe("Ferrari", "Ferrari"),
+            Equipe("Red Bull", "Honda")
         )
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = CalendarioFragmentAdapter(listaCalendario)
+        recyclerView.adapter = EquipeFragmentAdapter(listaEquipes)
     }
 }

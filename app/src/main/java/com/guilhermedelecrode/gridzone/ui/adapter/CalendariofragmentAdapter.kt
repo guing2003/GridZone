@@ -4,7 +4,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
-import com.guilhermedelecrode.gridzone.model.Calendario
+import com.guilhermedelecrode.gridzone.data.model.Calendario
 
 class CalendarioFragmentAdapter(private val listaCalendario: List<Calendario>) :
     RecyclerView.Adapter<CalendarioFragmentAdapter.CalendarioViewHolder>() {

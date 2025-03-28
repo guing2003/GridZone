@@ -4,7 +4,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
-import com.guilhermedelecrode.gridzone.model.Equipe
+import com.guilhermedelecrode.gridzone.data.model.Equipe
 
 class EquipeFragmentAdapter(private val listaEquipes: List<Equipe>) :
     RecyclerView.Adapter<EquipeFragmentAdapter.EquipeViewHolder>() {

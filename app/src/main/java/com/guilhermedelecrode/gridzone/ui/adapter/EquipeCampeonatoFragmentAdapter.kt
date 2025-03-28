@@ -4,7 +4,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
-import com.guilhermedelecrode.gridzone.model.EquipeCampeonato
+import com.guilhermedelecrode.gridzone.data.model.EquipeCampeonato
 
 class EquipeCampeonatoFragmentAdapter(private val listaEquipe: List<EquipeCampeonato>) :
     RecyclerView.Adapter<EquipeCampeonatoFragmentAdapter.EquipeCampeonatoViewHolder>() {

@@ -1,12 +1,10 @@
-package com.guilhermedelecrode.gridzone
+package com.guilhermedelecrode.gridzone.ui.view
 
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.guilhermedelecrode.gridzone.R
 
 class DetalhesPilotoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +20,7 @@ class DetalhesPilotoActivity : AppCompatActivity() {
 
         findViewById<TextView>(R.id.nome_piloto_detalhes_piloto_activity).text = nome
         //findViewById<TextView>(R.id.textViewSigla).text = sigla
-        //findViewById<TextView>(R.id.textViewEquipe).text = equipe
-        //findViewById<TextView>(R.id.textViewNumero).text = numero.toString()
+        findViewById<TextView>(R.id.equipe_piloto_detalhe_piloto_activity).text = equipe
+        findViewById<TextView>(R.id.numero_piloto_detalhe_piloto_activity).text = numero.toString()
     }
 }

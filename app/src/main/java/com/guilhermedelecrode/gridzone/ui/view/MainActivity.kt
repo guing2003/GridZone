@@ -1,14 +1,15 @@
-package com.guilhermedelecrode.gridzone
+package com.guilhermedelecrode.gridzone.ui.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.guilhermedelecrode.gridzone.ui.CalendarioFragment
-import com.guilhermedelecrode.gridzone.ui.CampeonatoFragment
-import com.guilhermedelecrode.gridzone.ui.HomeFragment
-import com.guilhermedelecrode.gridzone.ui.PilotosFragment
-import com.guilhermedelecrode.gridzone.ui.EquipeFragment
+import com.guilhermedelecrode.gridzone.R
+import com.guilhermedelecrode.gridzone.ui.view.fragment.CalendarioFragment
+import com.guilhermedelecrode.gridzone.ui.view.fragment.CampeonatoFragment
+import com.guilhermedelecrode.gridzone.ui.view.fragment.HomeFragment
+import com.guilhermedelecrode.gridzone.ui.view.fragment.PilotosFragment
+import com.guilhermedelecrode.gridzone.ui.view.fragment.EquipeFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

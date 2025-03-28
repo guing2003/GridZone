@@ -1,4 +1,4 @@
-package com.guilhermedelecrode.gridzone.model
+package com.guilhermedelecrode.gridzone.data.model
 
 data class Piloto(
     val nome: String,

@@ -1,4 +1,4 @@
-package com.guilhermedelecrode.gridzone.ui
+package com.guilhermedelecrode.gridzone.ui.view.fragment
 
 import PilotoFragmentAdapter
 import android.content.Intent
@@ -9,9 +9,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.guilhermedelecrode.gridzone.DetalhesPilotoActivity
+import com.guilhermedelecrode.gridzone.ui.view.DetalhesPilotoActivity
 import com.guilhermedelecrode.gridzone.R
-import com.guilhermedelecrode.gridzone.model.Piloto
+import com.guilhermedelecrode.gridzone.data.model.Piloto
 
 class PilotosFragment : Fragment() {
     override fun onCreateView(
