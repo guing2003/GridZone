@@ -6,19 +6,27 @@ import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
 import com.guilhermedelecrode.gridzone.model.Piloto
 
-class PilotoFragmentAdapter(private val listaPilotos: List<Piloto>) :
-    RecyclerView.Adapter<PilotoFragmentAdapter.PilotoViewHolder>() {
-
+class PilotoFragmentAdapter(
+    private val listaPilotos: List<Piloto>,
+    private val listener: (Piloto) -> Unit
+) : RecyclerView.Adapter<PilotoFragmentAdapter.PilotoViewHolder>() {
 
     class PilotoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        //val imgPiloto: ImageView = itemView.findViewById(R.id.imagem_piloto_fragment)
         val nomePiloto: TextView = itemView.findViewById(R.id.nome_piloto_fragment)
         val siglaPiloto: TextView = itemView.findViewById(R.id.sigla_piloto_fragment)
         val equipePiloto: TextView = itemView.findViewById(R.id.equipe_piloto_fragment)
         val numeroPiloto: TextView = itemView.findViewById(R.id.numero_piloto_fragment)
 
-    }
+        fun bind(item: Piloto, listener: (Piloto) -> Unit) {
+            nomePiloto.text = item.nome
+            siglaPiloto.text = item.sigla
+            equipePiloto.text = item.equipe
+            numeroPiloto.text = item.numero.toString()
 
+            // Adiciona o clique ao item
+            itemView.setOnClickListener { listener(item) }
+        }
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PilotoViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -26,17 +34,10 @@ class PilotoFragmentAdapter(private val listaPilotos: List<Piloto>) :
         return PilotoViewHolder(view)
     }
 
-
     override fun onBindViewHolder(holder: PilotoViewHolder, position: Int) {
         val piloto = listaPilotos[position]
-        //holder.imgPiloto.text =  // Define a imagem
-        holder.nomePiloto.text = piloto.nome
-        holder.siglaPiloto.text = piloto.sigla
-        holder.equipePiloto.text = piloto.equipe
-        holder.numeroPiloto.text = piloto.numero.toString()
-
+        holder.bind(piloto, listener)
     }
-
 
     override fun getItemCount() = listaPilotos.size
 }
