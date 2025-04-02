@@ -1,6 +1,7 @@
 package com.guilhermedelecrode.gridzone.ui.view.fragment
 
 import EquipeFragmentAdapter
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
 import com.guilhermedelecrode.gridzone.data.model.Equipe
+import com.guilhermedelecrode.gridzone.ui.view.DetalhesEquipeActivity
+import com.guilhermedelecrode.gridzone.ui.view.DetalhesPilotoActivity
 
 class EquipeFragment : Fragment() {
     override fun onCreateView(
@@ -30,6 +33,12 @@ class EquipeFragment : Fragment() {
         )
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = EquipeFragmentAdapter(listaEquipes)
+        recyclerView.adapter = EquipeFragmentAdapter(listaEquipes) { equipe ->
+            val intent = Intent(requireContext(), DetalhesEquipeActivity::class.java).apply {
+                putExtra("NOME", equipe.nome)
+                putExtra("MOTOR", equipe.motor)
+            }
+            startActivity(intent)
+        }
     }
 }

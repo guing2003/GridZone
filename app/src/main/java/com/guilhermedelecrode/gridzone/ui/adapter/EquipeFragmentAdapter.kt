@@ -5,8 +5,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
 import com.guilhermedelecrode.gridzone.data.model.Equipe
+import com.guilhermedelecrode.gridzone.data.model.Piloto
 
-class EquipeFragmentAdapter(private val listaEquipes: List<Equipe>) :
+class EquipeFragmentAdapter(private val listaEquipes: List<Equipe>,
+                            private val listener: (Equipe) -> Unit) :
     RecyclerView.Adapter<EquipeFragmentAdapter.EquipeViewHolder>() {
 
 
@@ -14,6 +16,14 @@ class EquipeFragmentAdapter(private val listaEquipes: List<Equipe>) :
         //val imgPiloto: ImageView = itemView.findViewById(R.id.imagem_piloto_fragment)
         val nomeEquipe: TextView = itemView.findViewById(R.id.nome_equipe_fragment)
         val motorEquipe: TextView = itemView.findViewById(R.id.motor_equipe_fragment)
+
+        fun bind(item: Equipe, listener: (Equipe) -> Unit) {
+            nomeEquipe.text = item.nome
+            motorEquipe.text = item.motor
+
+            // Adiciona o clique ao item
+            itemView.setOnClickListener { listener(item) }
+        }
     }
 
 
@@ -26,9 +36,7 @@ class EquipeFragmentAdapter(private val listaEquipes: List<Equipe>) :
 
     override fun onBindViewHolder(holder: EquipeViewHolder, position: Int) {
         val equipe = listaEquipes[position]
-        //holder.imgPiloto.text =  // Define a imagem
-        holder.nomeEquipe.text = equipe.nome
-        holder.motorEquipe.text = equipe.motor
+        holder.bind(equipe, listener)
 
 
     }
