@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imagem_circuito"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/imagem_padrao" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/nome_gp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GP da Austrália"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/data_gp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Domingo, 16 de Março - 1:00h"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/horarios_treinos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Treinos Livres: \nSexta-feira - 10:00h\nSábado - 11:00h"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/horario_classificacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Classificação: Sábado - 15:00h"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/quantidade_voltas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total de Voltas: 58"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
