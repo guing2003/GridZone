@@ -18,7 +18,7 @@ class DetalhesPilotoActivity : AppCompatActivity() {
 
         Log.i("DetalhesPilotoActivity", "Dados do Piloto: $nome, $sigla, $equipe, $numero")
 
-        findViewById<TextView>(R.id.nome_piloto_detalhes_piloto_activity).text = nome
+        findViewById<TextView>(R.id.nome_piloto_detalhe_piloto_activity).text = nome
         //findViewById<TextView>(R.id.textViewSigla).text = sigla
         findViewById<TextView>(R.id.equipe_piloto_detalhe_piloto_activity).text = equipe
         findViewById<TextView>(R.id.numero_piloto_detalhe_piloto_activity).text = numero.toString()
