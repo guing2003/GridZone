@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
     android:padding="8dp">
 
@@ -16,7 +17,7 @@
         app:cardElevation="4dp">
 
         <ImageView
-            android:id="@+id/imagem_circuito"
+            android:id="@+id/imagem_circuito_detalhes_corrida_activity"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
@@ -27,7 +28,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="12dp"
         app:cardElevation="4dp">
 
@@ -38,52 +38,52 @@
             android:padding="8dp">
 
             <TextView
-                android:id="@+id/nome_gp"
+                android:id="@+id/nome_corrida_detalhes_corrida_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="GP da Austrália"
-                android:textAppearance="?attr/textAppearanceHeadline6"
-                android:padding="8dp" />
+                android:padding="8dp"
+                tools:text="GP da Austrália"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
 
             <TextView
-                android:id="@+id/data_gp"
+                android:id="@+id/data_corrida_detalhes_corrida_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Domingo, 16 de Março - 1:00h"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="?android:attr/textColorSecondary"
                 android:paddingLeft="8dp"
-                android:paddingBottom="8dp" />
+                android:paddingBottom="8dp"
+                tools:text="Domingo, 16 de Março - 1:00h"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary" />
 
             <TextView
-                android:id="@+id/horarios_treinos"
+                android:id="@+id/horarios_treinos_detalhes_corrida_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
                 android:text="Treinos Livres: \nSexta-feira - 10:00h\nSábado - 11:00h"
                 android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="?android:attr/textColorSecondary"
-                android:paddingLeft="8dp"
-                android:paddingBottom="8dp" />
+                android:textColor="?android:attr/textColorSecondary" />
 
             <TextView
-                android:id="@+id/horario_classificacao"
+                android:id="@+id/horario_classificacao_detalhes_corrida_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
                 android:text="Classificação: Sábado - 15:00h"
                 android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="?android:attr/textColorSecondary"
-                android:paddingLeft="8dp"
-                android:paddingBottom="8dp" />
+                android:textColor="?android:attr/textColorSecondary" />
 
             <TextView
-                android:id="@+id/quantidade_voltas"
+                android:id="@+id/quantidade_voltas_detalhes_corrida_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
                 android:text="Total de Voltas: 58"
                 android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="?android:attr/textColorSecondary"
-                android:paddingLeft="8dp"
-                android:paddingBottom="8dp" />
+                android:textColor="?android:attr/textColorSecondary" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

@@ -36,7 +36,7 @@
                     android:gravity="center_vertical">
 
                     <TextView
-                        android:id="@+id/nome_calendario_fragment"
+                        android:id="@+id/nome_corrida_fragment"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -44,7 +44,7 @@
                         android:textAppearance="?attr/textAppearanceHeadline6" />
 
                     <ImageView
-                        android:id="@+id/imagem_calendario_fragment"
+                        android:id="@+id/imagem_pais_corrida_fragment"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:scaleType="centerCrop"
@@ -52,7 +52,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/data_calendario_fragment"
+                    android:id="@+id/data_corrida_fragment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"

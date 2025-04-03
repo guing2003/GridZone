@@ -23,7 +23,6 @@ class PilotoFragmentAdapter(
             equipePiloto.text = item.equipe
             numeroPiloto.text = item.numero.toString()
 
-            // Adiciona o clique ao item
             itemView.setOnClickListener { listener(item) }
         }
     }

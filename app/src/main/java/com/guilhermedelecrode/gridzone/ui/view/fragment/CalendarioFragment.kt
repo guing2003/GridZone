@@ -1,6 +1,7 @@
 package com.guilhermedelecrode.gridzone.ui.view.fragment
 
 import CalendarioFragmentAdapter
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
 import com.guilhermedelecrode.gridzone.data.model.Calendario
+import com.guilhermedelecrode.gridzone.ui.view.DetalhesCorridaActivity
+import com.guilhermedelecrode.gridzone.ui.view.DetalhesPilotoActivity
 
 class CalendarioFragment : Fragment() {
     override fun onCreateView(
@@ -30,6 +33,12 @@ class CalendarioFragment : Fragment() {
         )
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = CalendarioFragmentAdapter(listaCalendario)
+        recyclerView.adapter = CalendarioFragmentAdapter(listaCalendario) { calendario ->
+            val intent = Intent(requireContext(), DetalhesCorridaActivity::class.java).apply {
+                putExtra("NOME", calendario.nome)
+                putExtra("DATA", calendario.data)
+            }
+            startActivity(intent)
+        }
     }
 }
