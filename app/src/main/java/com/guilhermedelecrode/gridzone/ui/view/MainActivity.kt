@@ -7,7 +7,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.guilhermedelecrode.gridzone.R
 import com.guilhermedelecrode.gridzone.ui.view.fragment.CalendarioFragment
 import com.guilhermedelecrode.gridzone.ui.view.fragment.CampeonatoFragment
-import com.guilhermedelecrode.gridzone.ui.view.fragment.HomeFragment
+import com.guilhermedelecrode.gridzone.ui.view.fragment.NoticiasFragment
 import com.guilhermedelecrode.gridzone.ui.view.fragment.PilotosFragment
 import com.guilhermedelecrode.gridzone.ui.view.fragment.EquipeFragment
 
@@ -20,18 +20,18 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, HomeFragment())
+                .replace(R.id.fragment_container, NoticiasFragment())
                 .commit()
         }
 
         bottomNavigationView.setOnItemSelectedListener { item ->
             val selectedFragment: Fragment = when (item.itemId) {
-                R.id.nav_home -> HomeFragment()
+                R.id.nav_home -> NoticiasFragment()
                 R.id.nav_calendario -> CalendarioFragment()
                 R.id.nav_pilots -> PilotosFragment()
                 R.id.nav_teams -> EquipeFragment()
                 R.id.nav_championship -> CampeonatoFragment()
-                else -> HomeFragment()
+                else -> NoticiasFragment()
             }
 
             supportFragmentManager.beginTransaction()
