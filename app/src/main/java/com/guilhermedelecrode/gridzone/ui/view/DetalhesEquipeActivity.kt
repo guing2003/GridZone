@@ -5,8 +5,6 @@ import android.util.Log
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.guilhermedelecrode.gridzone.R
 
 class DetalhesEquipeActivity : AppCompatActivity() {

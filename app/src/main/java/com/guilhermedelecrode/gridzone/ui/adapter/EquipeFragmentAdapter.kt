@@ -5,7 +5,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
 import com.guilhermedelecrode.gridzone.data.model.Equipe
-import com.guilhermedelecrode.gridzone.data.model.Piloto
 
 class EquipeFragmentAdapter(private val listaEquipes: List<Equipe>,
                             private val listener: (Equipe) -> Unit) :

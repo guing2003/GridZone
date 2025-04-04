@@ -5,7 +5,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
 import com.guilhermedelecrode.gridzone.data.model.Calendario
-import com.guilhermedelecrode.gridzone.data.model.Piloto
 
 class CalendarioFragmentAdapter(
     private val listaCalendario: List<Calendario>,

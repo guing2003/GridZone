@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
 import com.guilhermedelecrode.gridzone.data.model.Calendario
 import com.guilhermedelecrode.gridzone.ui.view.DetalhesCorridaActivity
-import com.guilhermedelecrode.gridzone.ui.view.DetalhesPilotoActivity
 
 class CalendarioFragment : Fragment() {
     override fun onCreateView(

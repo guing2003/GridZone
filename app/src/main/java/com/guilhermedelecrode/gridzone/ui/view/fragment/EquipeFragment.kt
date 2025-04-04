@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.guilhermedelecrode.gridzone.R
 import com.guilhermedelecrode.gridzone.data.model.Equipe
 import com.guilhermedelecrode.gridzone.ui.view.DetalhesEquipeActivity
-import com.guilhermedelecrode.gridzone.ui.view.DetalhesPilotoActivity
 
 class EquipeFragment : Fragment() {
     override fun onCreateView(
