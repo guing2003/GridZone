@@ -8,5 +8,6 @@
     <color name="colorPrimary">#FF0000</color>
     <color name="colorPrimaryVariant">#FF6347</color>
     <color name="colorOnPrimary">#ffffff</color>
+    <color name="colorOnPrimaryCard">#F5F5F5</color>
 
 </resources>
